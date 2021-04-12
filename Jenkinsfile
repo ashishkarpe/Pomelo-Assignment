@@ -2,7 +2,7 @@ node {
     stage 'Checkout'
     def branchName = "${branch}"
     
-    git credentialsId: 'GitDevOpsAshish', url: 'https://github.com/ashishkarpe/Pomelo-Assignment.git'     
+    git credentialsId: 'GitDevOpsAshish', url: 'https://github.com/ashishkarpe/Pomelo-Assignment.git' ,branch: branchName,     
     //git credentialsId: 'GitDevOpsAshish', url: 'ssh://jenkins@github.com:ashishkarpe/Pomelo-Assignment.git' 
     // git([url: 'git@github.com:ashishkarpe/Pomelo-Assignment.git', branch: branchName])
     def mvnHome = tool 'M3'
