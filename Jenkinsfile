@@ -7,13 +7,13 @@ node {
 
     dir('grs_lib') {
         stage 'Build GRS Lib'
-        sh "${mvnHome}/bin/mvn clean install -DskipTests"
+        sh "${mvnHome}/bin/mvn clean install -DskipTests ./App/"
     }
     dir('core') {
         stage 'Build Core'
-        sh "${mvnHome}/bin/mvn clean install -DskipTests"
+        sh "${mvnHome}/bin/mvn clean install -DskipTests ./App/"
     }
-    dir('gatekeeper') {
+    dir('App') {
         stage 'Build docker image'
         def pom = readMavenPom file: 'pom.xml'
         def v = version()
