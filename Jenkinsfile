@@ -5,8 +5,8 @@ node {
     git credentialsId: 'GitDevOpsAshish', url: 'https://github.com/ashishkarpe/Pomelo-Assignment.git' ,branch: branchName,     
     //git credentialsId: 'GitDevOpsAshish', url: 'ssh://jenkins@github.com:ashishkarpe/Pomelo-Assignment.git' 
     // git([url: 'git@github.com:ashishkarpe/Pomelo-Assignment.git', branch: branchName])
-   def mvnHome = tool 'M3'
-
+  // def mvnHome = tool 'M3'
+    def mvnHome 
     dir('grs_lib') {
         stage 'Build GRS Lib'
         sh "${mvnHome}/bin/mvn clean install -DskipTests ./App/"
