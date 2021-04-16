@@ -43,6 +43,6 @@
 		</plugins>
 	</build>
 	<build>
-                <defaultGoal>install</defaultGoal>
+                <defaultGoal>mvn clean install</defaultGoal>
         </build>
 </project>
