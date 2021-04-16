@@ -42,8 +42,5 @@
 			</plugin>
 		</plugins>
 	</build>
-        <build>
-           	<defaultGoal>mvn clean install </defaultGoal>
-
-	</build>
+      
 </project>
