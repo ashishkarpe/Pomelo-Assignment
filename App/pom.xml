@@ -37,13 +37,15 @@
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-				<build>
-                			//<defaultGoal>mvn clean install java target/Recommandation-1.0-SNAPSHOT.jar org.exemple.demo.App</defaultGoal>
-					<defaultGoal>mvn spring-boot:run</defaultGoal>
+				<groupId>org.springframework.boot
+					<build>
+                				<defaultGoal>mvn clean install java target/Recommandation-1.0-SNAPSHOT.jar org.exemple.demo.App</defaultGoal>
+						<defaultGoal>mvn spring-boot:run</defaultGoal>
 		
-        			</build>
+        				</build>
+				</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				
 			</plugin>
 		</plugins>
 	</build>
