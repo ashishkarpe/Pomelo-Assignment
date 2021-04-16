@@ -42,14 +42,14 @@
 		//		<build>
                 			//<defaultGoal>mvn clean install java target/Recommandation-1.0-SNAPSHOT.jar org.exemple.demo.App</defaultGoal>
 					//<defaultGoal>mvn spring-boot:run</defaultGoal>
-					<defaultGoal>mvn clean install install</defaultGoal>
+					//<defaultGoal>mvn clean install install</defaultGoal>
 						
 		//		</build>
 			</plugin>
 		</plugins>
 	</build>
-        //<build>
-          //  	<defaultGoal>mvn clean install </defaultGoal>
+        <build>
+           	<defaultGoal>mvn clean install </defaultGoal>
 
-	//</build>
+	</build>
 </project>
