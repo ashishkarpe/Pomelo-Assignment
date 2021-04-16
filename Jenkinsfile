@@ -7,13 +7,13 @@ node {
     // git([url: 'git@github.com:ashishkarpe/Pomelo-Assignment.git', branch: branchName])
    def mvnHome = tool 'M3'
    
-    dir('grs_lib') {
+    dir('App') {
         stage 'Build GRS Lib'
         //sh "${mvnHome}/bin/mvn spring-boot:run"
         sh "${mvnHome}/bin/mvn clean install"
-        sh "${mvnHome}/bin/mvn clean install -DskipTests ./App/"
+        //sh "${mvnHome}/bin/mvn clean install -DskipTests ./App/"
     }
-    dir('core') {
+    dir('App') {
         stage 'Build Core'
        // sh "${mvnHome}/bin/mvn spring-boot:run"
         sh "${mvnHome}/bin/mvn clean install"
