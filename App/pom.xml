@@ -39,12 +39,13 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<build>
+                			<defaultGoal>mvn clean install</defaultGoal>
+					//<defaultGoal>mvn spring-boot:run</defaultGoal>
+		
+        			</build>
 			</plugin>
 		</plugins>
 	</build>
-	<build>
-                //<defaultGoal>mvn clean install</defaultGoal>
-		<defaultGoal>mvn spring-boot:run</defaultGoal>
-		
-        </build>
+	
 </project>
