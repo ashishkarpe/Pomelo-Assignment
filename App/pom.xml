@@ -20,7 +20,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
-                        <profiles><profile><id>docker</id></profile><profiles>
 		</dependency>
 
 		<dependency>
@@ -43,10 +42,4 @@
 			</plugin>
 		</plugins>
 	</build>
-       <profiles>
-	       <profile>
-		       <id>docker</id>
-	       </profile>
-       <profiles>
-
 </project>
