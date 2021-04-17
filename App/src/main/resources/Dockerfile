@@ -3,7 +3,7 @@
 FROM frolvlad/alpine-oraclejre8
 ENV JAVA_OPTS " -XX:+UnlockCommercialFeatures -XX:+FlightRecorder"
 VOLUME /tmp
-ADD pomelo-web-0.0.1.jar app.jar
+ADD Pomelo-Assignment-0.0.1-SNAPSHOT.jar app.jar
 RUN bash -c 'touch /app.jar'
 
 ADD .fingerprint /.fingerprint
