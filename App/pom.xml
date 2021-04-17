@@ -20,6 +20,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
+                        <profiles><profile><id>docker</id></profile><profiles>
 		</dependency>
 
 		<dependency>
@@ -39,7 +40,6 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<profiles><profile><id>docker</id></profile><profiles>
 			</plugin>
 		</plugins>
 	</build>
