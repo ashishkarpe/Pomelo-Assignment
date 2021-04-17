@@ -3,8 +3,8 @@
 FROM frolvlad/alpine-oraclejre8
 ENV JAVA_OPTS " -XX:+UnlockCommercialFeatures -XX:+FlightRecorder"
 VOLUME /tmp
-ADD App/target/Pomelo-Assignment-0.0.1-SNAPSHOT.jar app.jar
-RUN bash -c 'touch /app.jar'
+ADD Pomelo-Assignment-0.0.1-SNAPSHOT.jar app.jar
+#RUN bash -c 'touch /app.jar'
 
 ADD .fingerprint /.fingerprint
 ADD entrypoint.sh /entrypoint.sh
