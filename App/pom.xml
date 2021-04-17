@@ -66,7 +66,7 @@
                                 </goals>
                             </execution>
                         </executions>
-                        <!--configuration>
+                        <configuration>
                             <serverId>docker-hub</serverId>
                             <registryUrl>https://index.docker.io/v1/</registryUrl>
                             <imageName>${project.artifactId}</imageName>
@@ -78,7 +78,7 @@
                                     <include>${project.build.finalName}.jar</include>
                                 </resource>
                             </resources>
-                        </configuration -->
+                        </configuration>
                     </plugin>
                 </plugins>
             </build>
