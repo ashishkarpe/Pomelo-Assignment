@@ -13,13 +13,13 @@ node {
         sh "${mvnHome}/bin/mvn clean install"
         //sh "${mvnHome}/bin/mvn clean install -DskipTests ./App/"
     }
-    dir('App') {
-        stage 'Build Core'
+   // dir('App') {
+     //   stage 'Build Core'
        // sh "${mvnHome}/bin/mvn spring-boot:run"
-        sh "${mvnHome}/bin/mvn clean install"
+       // sh "${mvnHome}/bin/mvn clean install"
         //sh "${mvnHome}/bin/mvn clean install -DskipTests App/"
         
-    }
+    //}
     dir('App') {
         stage 'Build docker image'
         def pom = readMavenPom file: 'pom.xml'
