@@ -19,7 +19,7 @@ node {
        // sh "${mvnHome}/bin/mvn clean install"
       sh "${mvnHome}/bin/mvn clean install -DskipTests App/"
         
-    //}
+    }
     dir('App') {
         stage 'Build docker image'
         def pom = readMavenPom file: 'pom.xml'
