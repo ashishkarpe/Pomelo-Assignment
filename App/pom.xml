@@ -70,6 +70,9 @@
                             <serverId>docker-hub</serverId>
                             <registryUrl>https://index.docker.io/v1/</registryUrl>
                             <imageName>ashishkarpe/pomeloassignment1</imageName>
+				<imageTags>
+                                <imageTag>Pomel-App</imageTag>
+                            </imageTags>
                             <dockerDirectory>${project.basedir}/src/main/resources</dockerDirectory>
                             <resources>
                                 <resource>
