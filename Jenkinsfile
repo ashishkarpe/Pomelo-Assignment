@@ -11,7 +11,7 @@ node {
         stage 'Build Pomelo App'
         sh "${mvnHome}/bin/mvn spring-boot:run"
         sh "${mvnHome}/bin/mvn clean install"
-        sh "${mvnHome}/bin/mvn clean install -DskipTests App/"
+        sh "${mvnHome}/bin/mvn clean install -DskipTests App"
     }
  
         
