@@ -24,7 +24,7 @@ node {
         stage 'Build docker image'
         def pom = readMavenPom file: 'pom.xml'
         def v = version()
-        sh "${mvnHome}/bin/mvn clean package -DreleaseVersion=${v} -DdevelopmentVersion=${pom.version} -DskipTests -Pdocker docker:push -t ashishkarpe\pomeloassignment1:Pomelo-App"
+        sh "${mvnHome}/bin/mvn clean package -DreleaseVersion=${v} -DdevelopmentVersion=${pom.version} -DskipTests -Pdocker -t ashishkarpe\pomeloassignment1:Pomelo-App docker:push "
     }
 }
 def version() {
