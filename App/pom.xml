@@ -43,11 +43,5 @@
 		</plugins>
 	</build>
 	<profiles>
-  <profile>
-    <id>docker</id>
-    <activation>
-      <activeByDefault>true</activeByDefault>
-    </activation>
-  </profile>
-</profiles>
+ 
 </project>
