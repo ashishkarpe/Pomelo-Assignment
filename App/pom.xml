@@ -70,9 +70,6 @@
                             <serverId>docker-hub</serverId>
                             <registryUrl>https://index.docker.io/v1/</registryUrl>
                             <imageName>${project.artifactId}</imageName>
-                            <imageTags>
-                                <imageTag>${releaseVersion}</imageTag>
-                            </imageTags>
                             <dockerDirectory>${project.basedir}/src/main/resources</dockerDirectory>
                             <resources>
                                 <resource>
