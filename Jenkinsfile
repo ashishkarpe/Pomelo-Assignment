@@ -15,7 +15,7 @@ node {
     }
  
         
-    }
+    
     dir('App') {
         stage 'Build docker image'
         def pom = readMavenPom file: 'pom.xml'
