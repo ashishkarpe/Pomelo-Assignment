@@ -25,7 +25,7 @@ node {
         sh "${mvnHome}/bin/mvn clean package -DreleaseVersion=${v} -DdevelopmentVersion=${pom.version} -DskipTests -Pdocker docker:push "
         
     }
-    dir('App') {
+    dir('k8s') {
         stage 'Deploy docker image'
         def pom = readMavenPom file: 'pom.xml'
         def v = version()
@@ -33,7 +33,7 @@ node {
        // sh "docker push ashishkarpe/pomeloassignment1:${v}"
         //sh "${mvnHome}/bin/mvn clean package -DreleaseVersion=${v} -DdevelopmentVersion=${pom.version} -DskipTests -Pdocker docker:push "
         sh "pwd"
-       sh "kubectl --kubeconfig=/var/lib/jenkins/.kube/config-eks  apply -f  ./k8s/PomeloApp-deployment.yaml"
+       sh "kubectl --kubeconfig=/var/lib/jenkins/.kube/config-eks  apply -f  PomeloApp-deployment.yaml"
     }
 }
 def version() {
