@@ -71,7 +71,7 @@
                             <registryUrl>https://index.docker.io/v1/</registryUrl>
                             <imageName>ashishkarpe/pomeloassignment1</imageName>
 				<imageTags>
-                                <imageTag>Pomelo-App-${project.build.Number}</imageTag>
+                                <imageTag>Pomelo-App</imageTag>
                             </imageTags>
                             <dockerDirectory>${project.basedir}/src/main/resources</dockerDirectory>
                             <resources>
