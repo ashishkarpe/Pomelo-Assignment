@@ -11,7 +11,7 @@ public class PomeloMysqlTestApplication {
 
   @RequestMapping("/")
   public String home() {
-    return "Hello Docker World";
+    return "Hello EKS World From Ashish";
   }
 	public static void main(String[] args) {
 		SpringApplication.run(PomeloMysqlTestApplication.class, args);
