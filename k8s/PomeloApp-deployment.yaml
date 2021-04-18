@@ -5,6 +5,7 @@ metadata:
   labels:
     app: pomeloapp
   name: pomeloapp
+  namespace: pomelo
 spec:
   replicas: 1
   selector:
