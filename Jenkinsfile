@@ -32,7 +32,7 @@ node {
         //sh "docker build -t ashishkarpe/pomeloassignment1:${v} App/src/main/resources/"  
        // sh "docker push ashishkarpe/pomeloassignment1:${v}"
         //sh "${mvnHome}/bin/mvn clean package -DreleaseVersion=${v} -DdevelopmentVersion=${pom.version} -DskipTests -Pdocker docker:push "
-        sh "pwd"
+        sh "kubectl --kubeconfig=/var/lib/jenkins/.kube/config-eks delete  -f PomeloApp-deployment.yaml"
        sh "kubectl --kubeconfig=/var/lib/jenkins/.kube/config-eks  apply -f  PomeloApp-deployment.yaml"
     }
 }
