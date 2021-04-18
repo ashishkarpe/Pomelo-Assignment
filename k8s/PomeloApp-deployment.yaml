@@ -19,7 +19,7 @@ spec:
         app: pomeloapp
     spec:
       containers:
-      - image: ashishkarpe/pomeloassignment1
+      - image: ashishkarpe/pomeloassignment1:latest
         name: pomeloassignment1
         ports:
         - containerPort: 8080
