@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: pomeloapp
+  name: pomeloapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pomeloapp
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: pomeloapp
+    spec:
+      containers:
+      - image: ashishkarpe/pomeloassignment1
+        name: pomeloassignment1
+        ports:
+        - containerPort: 8080
+        resources: {}
+status: {}
