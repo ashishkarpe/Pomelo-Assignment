@@ -27,7 +27,7 @@ node {
     }
     dir('k8s') {
         stage 'Deploy docker image'
-        def pom = readMavenPom file: 'pom.xml'
+        //def pom = readMavenPom file: 'pom.xml'
         def v = version()
         //sh "docker build -t ashishkarpe/pomeloassignment1:${v} App/src/main/resources/"  
        // sh "docker push ashishkarpe/pomeloassignment1:${v}"
