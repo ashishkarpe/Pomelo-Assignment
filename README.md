@@ -10,3 +10,18 @@
  * Sufficient documentation for all of the above
 Alternatively,
  - All of the above, but running on EKS, GKE, or AKS.
+
+
+About The App:
+Application is a spring boot java project which intends to take json inpunt using post method and push data to RDS maria db and retrive data and display.
+
+Current Status of App: 
+Basic Hello app is ready but RDS db part of application is not yet finished.
+
+DevOps Infra automation: 
+Comeplete AWS Infra provisioning is managed by Terraform. EKS cluster and RDS are key components. Security point of view AWS keys are not pushed into code but managed as terraform variables as an input to terraform apply. 
+
+CI/CD:
+Using jenkins groovy file App gets build and deployed to EKS Cluster this is tested and Verfied. 
+
+Note: Almost all part of DevOps is completed but App side is remaining so If I get some more time will fix it.
