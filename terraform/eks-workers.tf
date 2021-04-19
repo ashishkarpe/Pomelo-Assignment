@@ -40,7 +40,7 @@ resource "aws_autoscaling_group" "demo" {
   desired_capacity = 2
   launch_configuration = aws_launch_configuration.demo.id
   max_size = 2
-  min_size = 2
+  min_size = 1
   name = "terraform-eks-demo"
   # TF-UPGRADE-TODO: In Terraform v0.10 and earlier, it was sometimes necessary to
   # force an interpolation expression to be interpreted as a list by wrapping it
