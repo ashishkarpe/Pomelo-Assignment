@@ -9,6 +9,6 @@ resource "aws_instance" "example" {
   vpc_security_group_ids = [aws_security_group.example-instance.id]
 
   # the public SSH key
-  key_name = aws_key_pair.Pomelo-Assignment-DevOps.key_name
+  key_name = aws_key_pair.mykeypair.key_name
 }
 
